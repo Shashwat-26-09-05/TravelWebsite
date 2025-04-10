@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shasha Tours & Travels</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="Logo.png" type="image/png" />
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="logo">
+        <img src="Logo.png" alt="Shasha Logo" class="logo-img" />
+        <div class="logo-text">
+          <h1>Shasha Tours & Travels</h1>
+          <p>Embark on the adventure of a lifetime</p>
+        </div>
+      </div>
+
+      <!-- Header actions -->
+      <div class="header-actions">
+        <button class="btn" id="registerBtn">Register</button>
+        <div class="menu-toggle" id="menu-toggle">
+          <span></span><span></span><span></span>
+        </div>
+      </div>
+
+      <!-- Toggle Menu -->
+      <nav id="navbar">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#tours">National Tours</a></li>
+          <li><a href="#" id="vehiclesBtn">Vehicles</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#" id="aboutUsLink">About Us</a></li>
+          <li><a href="#" id="termsLink">Terms & Conditions</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Home -->
+    <section id="home" class="intro">
+      <div class="intro-content">
+        <h2>Explore the Best National Tours with Shasha Tours & Travels</h2>
+        <p>
+          Where will your dreams take you? Explore your perfect destination with
+          a simple click!
+        </p>
+        <a href="#tours" class="btn">Explore Tours</a>
+      </div>
+    </section>
+
+    <!-- Tours -->
+    <section id="tours" class="services">
+      <h2>Our Popular National Tours</h2>
+      <div class="services-container">
+        <div class="service-card">
+          <img src="Tour 1.jpg" alt="Tour 1" />
+          <h3>Mountain Adventures</h3>
+          <p>Experience the thrill of the highest peaks.</p>
+        </div>
+        <div class="service-card">
+          <img src="tour 2.webp" alt="Tour 2" />
+          <h3>Beach Holidays</h3>
+          <p>Relax at the best beaches across the country.</p>
+        </div>
+        <div class="service-card">
+          <img src="tour 3.jpg" alt="Tour 3" />
+          <h3>Cultural Heritage</h3>
+          <p>Discover the rich history and culture of our land.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Buses -->
+    <section id="buses" class="transport">
+      <h2>Comfortable Bus Journeys</h2>
+      <div class="transport-container">
+        <div class="transport-card">
+          <img src="Bus1.jpg" alt="Bus 1" />
+          <h3>Luxury Buses</h3>
+          <p>Travel in comfort and style on our premium buses.</p>
+        </div>
+        <div class="transport-card">
+          <img src="Bus 2.webp" alt="Bus 2" />
+          <h3>Economy Buses</h3>
+          <p>Affordable and comfortable buses for every budget.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cars -->
+    <section id="cars" class="transport">
+      <h2>Rent a Car for Your Journey</h2>
+      <div class="transport-container">
+        <div class="transport-card">
+          <img src="Car 2.webp" alt="Car 1" />
+          <h3>Luxury Cars</h3>
+          <p>Drive in style with our luxury car options.</p>
+        </div>
+        <div class="transport-card">
+          <img src="Car 1.webp" alt="Car 2" />
+          <h3>Well Defined Interiors</h3>
+          <p>Luxurious interiors to elevate your journey.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Booking Alert -->
+    <div class="booking-alert">
+      Bookings will open soon ! <span id="registerLink">Register now</span>
+      <p>(Early Registrations can get up to 60% off on bookings !)</p>
+    </div>
+
+    <!-- Contact -->
+    <section id="contact" class="contact">
+      <h2>Contact Us</h2>
+      <p>Have questions? Feel free to reach out!</p>
+      <form id="contact-form" action="#">
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+      <div id="contact-error" class="form-error"></div>
+      <div id="form-success" class="form-success hidden">
+        Message sent successfully!
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-logo-container">
+        <img src="logo.png" alt="Shasha Tours Logo" class="footer-logo" />
+      </div>
+      <p>
+        For enquiries reach us at
+        <a href="mailto:info@shashatours.com">info@shashatours.com</a>
+      </p>
+      <p>Customer support available 24/7</p>
+      <p>&copy; 2025 Shasha Tours & Travels. All rights reserved.</p>
+    </footer>
+
+    <!-- Register Modal -->
+    <div id="registerModal" class="modal">
+      <div class="modal-content">
+        <span class="close" id="closeModal">&times;</span>
+        <h2>Register</h2>
+        <form id="register-form">
+          <input type="text" placeholder="Full Name" required />
+          <input type="email" placeholder="Email" required />
+          <input type="password" placeholder="Password" required />
+          <input type="password" placeholder="Confirm Password" required />
+          <button class="btn" type="submit">Register</button>
+        </form>
+        <div id="register-error" class="form-error"></div>
+        <div id="register-success" class="form-success hidden">
+          Registered successfully!
+        </div>
+      </div>
+    </div>
+
+    <!-- About Us Modal -->
+    <div id="aboutUsModal" class="modal">
+      <div class="modal-content">
+        <span class="close" id="closeAboutUs">&times;</span>
+        <h2>About Us</h2>
+        <p>
+          Shasha Tours & Travels is dedicated to providing unforgettable travel
+          experiences across the country. Our mission is to ensure every journey
+          is safe, comfortable, and full of wonderful memories. We prioritize
+          the safety and satisfaction of our tourists above all else, employing
+          modern vehicles and experienced guides. Your peace of mind is our top
+          priority, and we leave no stone unturned in delivering dependable
+          services.
+        </p>
+        <br />
+        <h3>Owner’s Remark</h3>
+        <div
+          style="
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-top: 15px;
+          "
+        >
+          <div style="text-align: center">
+            <img
+              src="Owner.jpg"
+              alt="Owner"
+              style="
+                width: 100px;
+                height: 100px;
+                object-fit: cover;
+                display: block;
+                margin: 0 auto;
+              "
+            />
+            <p style="margin: 5px 0 0; font-weight: bold">Shashwat Kaushik</p>
+          </div>
+          <p style="margin: 0; font-style: italic">
+            "At Shasha Tours & Travels, our top priority has always been the
+            safety, comfort, and unforgettable experience of our travelers.
+            Every journey we plan is handled with care, precision, and a deep
+            understanding of our passengers' needs. We’re not just offering
+            transportation—we're crafting memories, building trust, and
+            connecting people to the beauty of this country. Our team is
+            committed to making sure that from the first click to the final
+            destination, you feel valued, safe, and excited about what lies
+            ahead. We believe that every traveler deserves a journey that's not
+            only scenic but also seamless and stress-free."
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Terms Modal -->
+    <div id="termsModal" class="modal">
+      <div class="modal-content">
+        <span class="close" id="closeTerms">&times;</span>
+        <h2>Terms & Conditions</h2>
+        <p>
+          By booking with Shasha Tours & Travels, you agree to our terms of
+          service. All trips are subject to availability. Cancellations must be
+          made 48 hours prior to departure for a full refund. Safety protocols
+          must be followed at all times during travel. For more information,
+          please contact our support team.
+        </p>
+      </div>
+    </div>
+
+    <!-- Vehicles Modal Popup -->
+    <div id="vehiclesModal" class="modal">
+      <div class="modal-content vehicles-gallery">
+        <span class="close" id="closeVehicles">&times;</span>
+        <h2>Our Vehicles</h2>
+        <div class="gallery-grid">
+          <div class="gallery-item">
+            <img src="Vehicle 2.jpg" alt="" />
+            <div class="hover-text"></div>
+          </div>
+          <div class="gallery-item">
+            <img src="Vehicle-4.webp" alt="" />
+            <div class="hover-text"></div>
+          </div>
+          <div class="gallery-item">
+            <img src="Vehicle-10.webp" alt="" />
+            <div class="hover-text"></div>
+          </div>
+          <div class="gallery-item">
+            <img src="Vehicle-6.webp" alt="" />
+            <div class="hover-text"></div>
+          </div>
+          <div class="gallery-item">
+            <img src="Vehicle-12.webp" alt="" />
+            <div class="hover-text"></div>
+          </div>
+          <div class="gallery-item">
+            <img src="Vehicle-11.webp" alt="" />
+            <div class="hover-text"></div>
+          </div>
+          <div class="gallery-item">
+            <img src="Vehicle-8.webp" alt="" />
+            <div class="hover-text"></div>
+          </div>
+          <div class="gallery-item">
+            <img src="Vehicle-13.webp" alt="" />
+            <div class="hover-text"></div>
+          </div>
+          <div class="gallery-item">
+            <img src="Vehicle-9.webp" alt="" />
+            <div class="hover-text"></div>
+          </div>
+          <div class="gallery-item">
+            <img src="Vehicle-7.webp" alt="" />
+            <div class="hover-text"></div>
+          </div>
+          <div class="gallery-item">
+            <img src="Vehicle-14.webp" alt="" />
+            <div class="hover-text"></div>
+          </div>
+          <div class="gallery-item">
+            <img src="Vehicle 1.jpg" alt="" />
+            <div class="hover-text"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+  </body>
+</html>
